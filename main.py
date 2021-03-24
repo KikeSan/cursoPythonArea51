@@ -1,58 +1,53 @@
-# Listas
-value = [1,2,3,4,5,6.0,'7.0',[8,9,'10']]
+# CONDICIONALES & OPERADORES RACIONALES
 
-print(value[0])
-print(value[5])
-print(value[7][0])
-print(len(value))
+if 5 == 5:
+    print('es igual')
 
-print(value[-1])
+elif 5 != 3:
+    print('Es diferente')
 
-value[-1] = 8
-print(value)
+elif 5 != 2:
+    print('Es diferente')
 
-value.append(9)
-value.append(9)
-value.append([10,11,12])
-print(value)
+elif 5 != 1:
+    print('Es diferente')
 
-print(value.count(9))
+else:
+    print('No cumple ninguna condicion')
 
-print(value)
+# El is es equivalente al === de js
+#if 1 is 1:
+#    print('Es correcto')
 
-value.extend([13,14,15])
+lista = ['hola','mundo',1,2,3]
+if 'hola' in lista:
+    print('Si existe el elemento')
 
-print(value)
+if 'Python' not in lista:
+    print('No está en la lista')
 
-value.extend('Hola Mundo')
-print(value)
+dictt = {
+    'name':'Kike'
+}
+if dictt.get('name'):
+    print('Hola Mundo')
 
-value.extend(range(1,101))
-print(value)
+if dictt.get('last_name'):
+    print('Hola Mundo')
 
-# range(1,10) -> [1,2,3 ... 9]
+if not dictt.get('last_name'):
+    print('Hola Mundo')
 
-print(value.index(5))
+# and or
 
-value.insert(0,0)
-print(value)
+name = dictt.get('name')
+if not dictt.get('last_name') and name:
+    print(name)
 
-value.pop()
-print(value)
 
-value.remove(1)
-print(value)
+name = dictt.get('name')
+if dictt.get('last_name') or name:
+    print(name)
 
-value.reverse()
-print(value)
+# WHILE
 
-"""
-value = [1,3,5,2,4]
-value.sort()
-print(value)
-value.sort(reverse=True)
-print(value)
-"""
-
-value[-5:]
-print(value)
