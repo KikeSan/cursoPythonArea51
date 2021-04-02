@@ -1,51 +1,17 @@
 
-# 1) Imprimir “Hola mundo” por pantalla
-
-print('Hola Mundo')
-
-# 2) Crear dos variables numéricas, sumarlas y mostrar el resultado
-
-val1 = 5
-val2 = 3
-resp = val1 + val2
-print('Respuesta:',resp)
-
-print( int.__add__(val1,val2))
-
-# 3) Mostrar el precio del IGV de un producto con un valor de 100 y su precio final.
-
-
-
-
-# 5) Crea una variable numérica y si esta entre 0 y 10, mostrar un mensaje indicándolo.
-
-valor = 5
-if 0<valor<10:
-    print('El valor está entre 0 y 10')
-
 # 6) Añadir al anterior ejercicio, que si esta entre 11 y 20, muestre otro mensaje diferente y si esta entre 21 y 30 otro mensaje.
 
-valor = int(input('Ingresa una variable: '))
-if valor in range(0,11):
-    print('El valor está entre 0 y 10')
-elif valor in range(11,20):
-    print('El valor está entre 11 y 20')
-elif valor in range(21,30):
-    print('El valor está entre 21 y 30')
+
 
 
 # 7) Mostrar con un while los números del 1 al 100.
 
-number = 1
-while number in range(0,5):
-    print(f'número: {number}')
-    number += 1
+
 
 
 # 8) Mostrar con un for los números del 1 al 100.
-num = 1
-for num in range(1,5):
-    print(num)
+
+
 
 
 # 9) Mostrar los caracteres de la cadena “Hola mundo”.
